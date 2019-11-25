@@ -11,4 +11,4 @@ USAGE
    
 3) Update the imports in the `index.php` accordingly
 
-4) That's it.
+4) Copy everything to a webserver supporting PHP and access the site. That's it.
