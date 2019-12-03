@@ -12,3 +12,5 @@ USAGE
 3) Update the imports in the `index.php` accordingly
 
 4) Copy everything to a webserver supporting PHP and access the site. That's it.
+
+Preview available here: https://www.clemspace.ch/areadef
