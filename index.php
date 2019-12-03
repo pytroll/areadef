@@ -152,7 +152,7 @@ Use <strong>Shift+Drag</strong> to draw an extent.
                             "&nbsp;&nbsp;description: "+$('input[name="element_3"]').val() +
                             yamlParams +"<br>"+
                             "&nbsp;&nbsp;shape:<br>"+
-                            "&nbsp;&nbsp;&nbsp;&nbsp;height: "+xsize+"<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;width: "+xsize+"<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;height: "+ysize+"<br>" +
                             "&nbsp;&nbsp;area_extent:<br>"+
                             "&nbsp;&nbsp;&nbsp;&nbsp;lower_left_xy: ["+ extent.extent_[0] +", " + extent.extent_[1]  +"]<br>" +
