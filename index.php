@@ -27,9 +27,9 @@
 		<label id="prjSelector" class="description" for="element_1">Projection type</label>
 		<span>
 			<input id="element_1_1" name="element_1" class="element radio" type="radio" value="1" checked />
-			<label class="choice" for="element_1_1">proj=stere, lat_0=45.0, lon_0=10.0, lat_ts=45.0, ellps=WGS84</label>
-			<input id="element_1_2" name="element_1" class="element radio" type="radio" value="2"/>
-			<label class="choice" for="element_1_2">proj=eqc, ellps=WGS84, units=m</label>
+<label class="choice" for="element_1_1">proj=stere, lat_0=45.0, lon_0=10.0, lat_ts=45.0, ellps=WGS84</label>
+<input id="element_1_2" name="element_1" class="element radio" type="radio" value="2"/>
+<label class="choice" for="element_1_2">proj=eqc, ellps=WGS84, units=m</label>
 
 		</span> 
 		</li>		<li id="li_2" >
@@ -100,7 +100,13 @@ Use <strong>Shift+Drag</strong> to draw an extent.
      //     imageExtent: imageExtent
         })
       });
-
+     /* 
+     map.setView(new ol.View({
+          projection: prj,
+          center: [0, 0],
+          zoom: 4
+      }));
+*/
       var extent = new ol.interaction.Extent({
         condition: ol.events.condition.platformModifierKeyOnly
       });
@@ -149,7 +155,8 @@ Use <strong>Shift+Drag</strong> to draw an extent.
                             "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AREA_EXTENT: ("+extent.extent_.toString()+")"+
                             "<br>}<br><br><br>" +
                             $('input[name="element_2a"]').val().toLowerCase()+":<br>" +
-                            "&nbsp;&nbsp;description: "+$('input[name="element_3"]').val() +
+                            "&nbsp;&nbsp;description: "+$('input[name="element_3"]').val() +"<br>"+
+							"&nbsp;&nbsp;projection:"+
                             yamlParams +"<br>"+
                             "&nbsp;&nbsp;shape:<br>"+
                             "&nbsp;&nbsp;&nbsp;&nbsp;width: "+xsize+"<br>" +
